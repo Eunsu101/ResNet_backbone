@@ -1,3 +1,6 @@
 torch
 torchvision
 pennylane
+scikit-learn
+matplotlib
+umap-learn

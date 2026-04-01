@@ -1,12 +1,11 @@
 import torch
+import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
-
-from src.models.hybrid_pqc import ResNetFeatureExtractor
 
 
 @torch.no_grad()
 def build_feature_cache(
-    extractor: ResNetFeatureExtractor,
+    extractor: nn.Module,
     loader: DataLoader,
     device: torch.device,
 ) -> TensorDataset:
